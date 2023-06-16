@@ -1,0 +1,37 @@
+{
+  "name": "showoff",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build:vercel": "yarn run build:css; NITRO_PRESET=vercel nitro build",
+    "build": "yarn run build:css; yarn run build:server",
+    "build:server": "nitro build",
+    "build:css": "unocss",
+    "dev": "concurrently 'yarn:dev:*'",
+    "dev:server": "nitro dev",
+    "dev:css": "unocss --watch"
+  },
+  "dependencies": {
+    "outdent": "^0.8.0",
+    "preact": "^10.15.1",
+    "preact-render-to-string": "^6.1.0",
+    "unocss": "^0.53.1"
+  },
+  "prettier": "@barelyhuman/prettier-config",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/plugin-transform-react-jsx": "^7.22.5",
+    "@barelyhuman/preact-island-plugins": "^0.0.13",
+    "@barelyhuman/prettier-config": "^1.1.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@unocss/cli": "^0.53.1",
+    "@unocss/preset-attributify": "^0.53.1",
+    "@unocss/preset-uno": "^0.53.1",
+    "@unocss/preset-web-fonts": "^0.53.1",
+    "concurrently": "^8.2.0",
+    "nitropack": "^2.4.1",
+    "prettier": "^2.8.8"
+  },
+  "packageManager": "yarn@3.5.0"
+}
