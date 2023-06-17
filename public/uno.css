@@ -102,10 +102,12 @@
 [max-w~="\33 xl"]{max-width:48rem;}
 [min-h~="screen"]{min-height:100vh;}
 .flex{display:flex;}
+.inline-flex{display:inline-flex;}
 .flex-1{flex:1 1 0%;}
 .flex-col{flex-direction:column;}
 .items-center{align-items:center;}
 .justify-center{justify-content:center;}
+.justify-between{justify-content:space-between;}
 .gap-2{grid-gap:0.5rem;gap:0.5rem;}
 .gap-4{grid-gap:1rem;gap:1rem;}
 .bg-zinc-200{--un-bg-opacity:1;background-color:rgba(228,228,231,var(--un-bg-opacity));}
