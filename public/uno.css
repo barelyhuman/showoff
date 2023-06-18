@@ -88,16 +88,18 @@
 [top~="\30 "]{top:0;}
 [bottom~="\31 "]{bottom:0.25rem;}
 .m-auto{margin:auto;}
+.my-20{margin-top:5rem;margin-bottom:5rem;}
 [mx~="auto"]{margin-left:auto;margin-right:auto;}
 .mb-2{margin-bottom:0.5rem;}
-.mt-10{margin-top:2.5rem;}
+.mt-0{margin-top:0;}
+.h-\[7px\]{height:7px;}
 .h-2\.5{height:0.625rem;}
-.h-5{height:1.25rem;}
+.h-4{height:1rem;}
 .h-full{height:100%;}
 .w-\[1px\]{width:1px;}
 .w-2\.5{width:0.625rem;}
 .w-20{width:5rem;}
-.w-5{width:1.25rem;}
+.w-4{width:1rem;}
 .w-full{width:100%;}
 [max-w~="\33 xl"]{max-width:48rem;}
 [min-h~="screen"]{min-height:100vh;}
@@ -105,13 +107,14 @@
 .inline-flex{display:inline-flex;}
 .flex-1{flex:1 1 0%;}
 .flex-col{flex-direction:column;}
+.hover\:cursor-pointer:hover{cursor:pointer;}
 .items-center{align-items:center;}
-.justify-center{justify-content:center;}
 .justify-between{justify-content:space-between;}
 .gap-2{grid-gap:0.5rem;gap:0.5rem;}
 .gap-4{grid-gap:1rem;gap:1rem;}
-.bg-zinc-200{--un-bg-opacity:1;background-color:rgba(228,228,231,var(--un-bg-opacity));}
+.rounded-sm{border-radius:0.125rem;}
 .bg-zinc-50{--un-bg-opacity:1;background-color:rgba(250,250,250,var(--un-bg-opacity));}
+.bg-zinc-500{--un-bg-opacity:1;background-color:rgba(113,113,122,var(--un-bg-opacity));}
 [bg~="transparent"]{background-color:transparent;}
 [bg~="zinc-800"]{--un-bg-opacity:1;background-color:rgba(39,39,42,var(--un-bg-opacity));}
 [bg~="zinc-900"]{--un-bg-opacity:1;background-color:rgba(24,24,27,var(--un-bg-opacity));}
@@ -121,16 +124,18 @@
 [stroke~="none"]{stroke:none;}
 [p~="\32 "]{padding:0.5rem;}
 .px-8{padding-left:2rem;padding-right:2rem;}
-.pb-8{padding-bottom:2rem;}
-.pt-12{padding-top:3rem;}
+.pb-14{padding-bottom:3.5rem;}
 [pt~="\31 0"]{padding-top:2.5rem;}
 .font-mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}
 [font~="sans"]{font-family:"Inter",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}
 .font-normal{font-weight:400;}
 .leading-normal{line-height:1.5;}
 .text-zinc-400{--un-text-opacity:1;color:rgba(161,161,170,var(--un-text-opacity));}
-.text-zinc-600{--un-text-opacity:1;color:rgba(82,82,91,var(--un-text-opacity));}
+.text-zinc-500{--un-text-opacity:1;color:rgba(113,113,122,var(--un-text-opacity));}
 [text~="zinc-50"]{--un-text-opacity:1;color:rgba(250,250,250,var(--un-text-opacity));}
 .hover\:text-zinc-200:hover{--un-text-opacity:1;color:rgba(228,228,231,var(--un-text-opacity));}
 .opacity-25{opacity:0.25;}
 .blur{--un-blur:blur(8px);filter:var(--un-blur) var(--un-brightness) var(--un-contrast) var(--un-drop-shadow) var(--un-grayscale) var(--un-hue-rotate) var(--un-invert) var(--un-saturate) var(--un-sepia);}
+.transition-colors{transition-property:color,background-color,border-color,outline-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms;}
+.duration-150{transition-duration:150ms;}
+.ease-in{transition-timing-function:cubic-bezier(0.4, 0, 1, 1);}

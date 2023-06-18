@@ -3,10 +3,13 @@ import outdent from 'outdent'
 export function ShowOffItem({ title, links, top, bottom, description }) {
   return (
     <div class="flex">
-      <div class="items-center w-20 flex flex-col justify-center">
-        <div class="flex-1 w-[1px]" bg={top ? 'zinc-800' : 'transparent'}></div>
+      <div class="items-center w-20 flex flex-col">
+        <div
+          class="w-[1px] h-[7px]"
+          bg={top ? 'zinc-800' : 'transparent'}
+        ></div>
         <div class="h-2.5 w-2.5 flex relative">
-          <div class="h-full w-full m-auto bg-zinc-200"></div>
+          <div class="h-full w-full m-auto rounded-sm  bg-zinc-500"></div>
           <div class="absolute h-full blur w-full opacity-25 top-0 left-0 right-0 bottom-0 bg-zinc-50"></div>
         </div>
         <div
@@ -14,22 +17,22 @@ export function ShowOffItem({ title, links, top, bottom, description }) {
           bg={bottom ? 'zinc-800' : 'transparent'}
         ></div>
       </div>
-      <div class="w-full px-8 pt-12 pb-8 flex flex-col">
-        <h2 class="mb-2">{title}</h2>
+      <div class="w-full px-8 pb-14 flex flex-col">
+        <h2 class="mt-0 mb-2">{title}</h2>
         <div class="flex flex-col gap-4">
           <article class="text-zinc-400 font-normal font-mono leading-normal">{outdent`${description}`}</article>
           <div class="flex gap-4">
             {links.map((x, i) => (
               <a
                 key={`${x.href}-${i}`}
-                class="text-zinc-600 hover:text-zinc-200 inline-flex items-center "
+                class="text-zinc-500 transition-colors duration-150 ease-in hover:cursor-pointer hover:text-zinc-200 inline-flex items-center "
                 href={x.href}
               >
                 <span>{x.label}</span>
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-4 w-4"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"

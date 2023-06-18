@@ -5,12 +5,12 @@ export default function HomePage({ data }) {
   return (
     <BaseLayout>
       <div class="flex flex-col gap-2">
-        <h1>reaper's | Show Off</h1>
-        <p class="text-zinc-600">
+        <h1>reaper's | show off</h1>
+        <p class="text-zinc-500">
           List of things that've lived for longer than I'd expect.
         </p>
       </div>
-      <section class="mt-10">
+      <section class="my-20">
         {data.map((workItem, index) => {
           return (
             <ShowOffItem
@@ -27,7 +27,7 @@ export default function HomePage({ data }) {
         <p>
           Built for fun by{' '}
           <a
-            class="text-zinc-600 hover:text-zinc-200 inline-flex items-center"
+            class="text-zinc-500 hover:cursor-pointer transition-colors duration-150 ease-in hover:text-zinc-200 inline-flex items-center"
             href="https://reaper.is"
           >
             reaper
@@ -35,7 +35,7 @@ export default function HomePage({ data }) {
         </p>
         <p>
           <a
-            class="text-zinc-600 hover:text-zinc-200 inline-flex items-center"
+            class="text-zinc-500 hover:cursor-pointer transition-colors duration-150 ease-in hover:text-zinc-200 inline-flex items-center"
             href="https://github.com/barelyhuman/showoff"
           >
             Source
