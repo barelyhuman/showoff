@@ -25,7 +25,9 @@ export function ShowOffItem({ title, links, top, bottom, description }) {
             {links.map((x, i) => (
               <a
                 key={`${x.href}-${i}`}
-                class="text-zinc-500 transition-colors duration-150 ease-in hover:cursor-pointer hover:text-zinc-200 inline-flex items-center "
+                class="text-zinc-500 no-underline transition-colors duration-150 ease-in hover:cursor-pointer hover:text-zinc-200 inline-flex items-center "
+                target="_blank"
+                rel="noreferrer"
                 href={x.href}
               >
                 <span>{x.label}</span>

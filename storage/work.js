@@ -7,7 +7,7 @@ export default [
     links: [
       {
         label: 'Source',
-        value: 'https://github.com/barelyhuman/preact-island-plugins',
+        href: 'https://github.com/barelyhuman/preact-island-plugins',
       },
     ],
   },
@@ -19,10 +19,23 @@ export default [
     the basic concept.
   `,
     links: [
-      { label: 'App', value: 'https://goblin.barelyhuman.xyz' },
+      { label: 'App', href: 'https://goblin.barelyhuman.xyz' },
       {
         label: 'Source',
-        value: 'https://github.com/barelyhuman/goblin',
+        href: 'https://github.com/barelyhuman/goblin',
+      },
+    ],
+  },
+  {
+    title: 'CRI',
+    description: `
+    Custom Rom Index, a simple straightforward curation of custom roms for various android devices 
+  `,
+    links: [
+      { label: 'App', href: 'https://cri.barelyhuman.dev' },
+      {
+        label: 'Source',
+        href: 'https://github.com/barelyhuman/custom-rom-index',
       },
     ],
   },
@@ -34,7 +47,7 @@ export default [
     links: [
       {
         label: 'Source',
-        value: 'https://github.com/barelyhuman/themer',
+        href: 'https://github.com/barelyhuman/themer',
       },
     ],
   },
@@ -46,7 +59,7 @@ export default [
     links: [
       {
         label: 'Source',
-        value: 'https://github.com/barelyhuman/commitlog',
+        href: 'https://github.com/barelyhuman/commitlog',
       },
     ],
   },
@@ -61,7 +74,7 @@ export default [
     links: [
       {
         label: 'App',
-        value: 'https://tillwhen.barelyhuman.dev',
+        href: 'https://tillwhen.barelyhuman.dev',
       },
     ],
   },
