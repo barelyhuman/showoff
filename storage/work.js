@@ -1,5 +1,15 @@
 export default [
   {
+    title: "Ping",
+    description: "A non intrusive and simple uptime status check",
+    links: [
+      {
+        label: "App",
+        href: "https://ping.barelyhuman.dev/"
+      }
+    ]
+  },
+  {
     title: 'preact-island-plugins',
     description: `
     Low Level plugins to help build island based frameworks and build servers for preact
