@@ -63,19 +63,4 @@ export default [
       },
     ],
   },
-  {
-    title: 'TillWhen',
-    description: `
-    A simple time tracking/logging service, nothing else. 
-    
-
-    Probably the most unexpected one to be still alive. 
-  `,
-    links: [
-      {
-        label: 'App',
-        href: 'https://tillwhen.barelyhuman.dev',
-      },
-    ],
-  },
 ]
