@@ -7,7 +7,7 @@ export default function HomePage({ data }) {
       <div class="flex flex-col gap-2">
         <h1>reaper's | show off</h1>
         <p class="text-zinc-500">
-          List of things that've lived for longer than I'd expect.
+          List of things I'm proud of
         </p>
       </div>
       <section class="my-20">

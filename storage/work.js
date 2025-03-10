@@ -1,11 +1,21 @@
 export default [
   {
+    title: "resume-lang",
+    description: "Experimental DSL to make it easier to write resume in a structured format",
+    links: [
+      {
+        label: "Source",
+        href: "https://github.com/barelyhuman/resume-lang"
+      }
+    ]
+  },
+  {
     title: "Ping",
     description: "A non intrusive and simple uptime status check",
     links: [
       {
         label: "App",
-        href: "https://ping.barelyhuman.dev/"
+        href: "https://ping.tinytown.studio/"
       }
     ]
   },
