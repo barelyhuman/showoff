@@ -30,7 +30,7 @@ export default [
         href: 'https://github.com/dumbjs/preland',
       },
     ],
-  }
+  },
   {
     title: 'preact-island-plugins',
     description: `
